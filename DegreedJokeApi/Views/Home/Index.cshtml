@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<br /><br /><br />
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#random" onclick="generator.startJokeTimer()">Random</a></li>
+    <li><a data-toggle="tab" href="#search" onclick="generator.stopJokeTimer()">Search</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="random" class="tab-pane fade in active">
+        <br />
+        <div class="jumbotron">
+            <div id="randomErrorMessage" class="alert alert-danger"></div>
+            <p id="randomJoke" class="lead"></p>
+        </div>
+    </div>
+    <div id="search" class="tab-pane fade">
+        <br />
+        <div class="jumbotron">
+            <div id="searchErrorMessage" class="alert alert-danger"></div>
+            <div class="active-cyan-3 active-cyan-4 mb-4">
+                <input id="searchTerm" class="form-control" type="text" placeholder="Search" aria-label="Search" maxlength="25">
+            </div>
+            <br />
+            <a href="javascript:void(0);" onclick="generator.searchForJokes()" class="btn btn-info btn-md">
+                Search
+            </a>
+            <div id="searchResults"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿@model JokeResultsModel
+@{
+}
+
+<div class="jumbotron">
+    <div>
+        <p class="lead">Short Jokes</p>
+        @if (Model.ShortList.Count > 0)
+        {
+            <ul class="list-group">
+                @foreach (JokeModel j in Model.ShortList)
+                {
+                    <li class="list-group-item list-group-item-info">@j.Joke</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <div>No Short Jokes Found</div>
+            <br />
+        }
+    </div>
+    <div>
+        <p class="lead">Medium Jokes</p>
+        @if (Model.MediumList.Count > 0)
+        {
+            <ul class="list-group">
+                @foreach (JokeModel j in Model.MediumList)
+                {
+                    <li class="list-group-item list-group-item-warning">@j.Joke</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <div>No Mediums Jokes Found</div>
+            <br />
+        }
+    </div>
+    <div>
+        <p class="lead">Long Jokes</p>
+        @if (Model.LongList.Count > 0) { 
+            <ul class="list-group">
+                @foreach (JokeModel j in Model.LongList)
+                {
+                    <li class="list-group-item list-group-item-success">@j.Joke</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <div>No Long Jokes Found</div>
+        }
+    </div>
+</div>

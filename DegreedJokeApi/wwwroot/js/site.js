@@ -22,7 +22,7 @@ class JokeGenerator{
     }
 
     startJokeTimer(){
-        this.jokeTimer = setInterval(function(){ JokeGenerator.loadRandomJoke(); }, 4000);
+        this.jokeTimer = setInterval(function(){ JokeGenerator.loadRandomJoke(); }, 10000);
     }
 
     stopJokeTimer(){

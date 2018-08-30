@@ -28,7 +28,7 @@ namespace DegreedJokeApi.Controllers
         }
 
         [Route("search/{term}")]
-        [ResponseCache(VaryByQueryKeys=new string[]{"*"}, Duration=180)]
+        [ResponseCache(VaryByQueryKeys=new string[]{"*"}, Duration=1800)]
         public async Task<PartialViewResult> SearchResults([FromRoute]string term){
             var model = await _jokeService.GetJokesSearch(term);
 

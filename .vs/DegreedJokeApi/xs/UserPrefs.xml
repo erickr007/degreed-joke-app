@@ -1,11 +1,13 @@
-﻿<Properties StartupConfiguration="{D8ED21D5-2CB0-4146-91DE-AC3BD2E664D2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DegreedJokeApi/wwwroot/js/site.js">
+﻿<Properties StartupConfiguration="{D8ED21D5-2CB0-4146-91DE-AC3BD2E664D2}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DegreedJokeApi Status">
     <Files>
       <File FileName="DegreedJokeApi/wwwroot/js/site.js" Line="35" Column="24" />
       <File FileName="DegreedJokeApi/Services/JokeService.cs" Line="49" Column="54" />
       <File FileName="DegreedJokeApi/Models/JokeResultsModel.cs" Line="36" Column="52" />
       <File FileName="DegreedJokeApi/Services/Interfaces/IJokeService.cs" Line="12" Column="30" />
       <File FileName="DegreedJokeApi/Controllers/HomeController.cs" Line="31" Column="70" />
+      <File FileName="DegreedJokeApi/Views/Home/Index.cshtml" Line="27" Column="17" />
+      <File FileName="DegreedJokeApi Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -20,13 +20,16 @@
         <br />
         <div class="jumbotron">
             <div id="searchErrorMessage" class="alert alert-danger"></div>
-            <div class="active-cyan-3 active-cyan-4 mb-4">
-                <input id="searchTerm" class="form-control" type="text" placeholder="Search" aria-label="Search" maxlength="25">
+            <div>
+                <div class="active-cyan-3 active-cyan-4 mb-4" style="float:left;width:85%;margin-right:10px">
+                    <input id="searchTerm" class="form-control" type="text" placeholder="Search" aria-label="Search" maxlength="25">
+                </div>
+
+                <a href="javascript:void(0);" onclick="generator.searchForJokes()" class="btn btn-info btn-md" style="float:left;width:10%">
+                    Search
+                </a>
             </div>
             <br />
-            <a href="javascript:void(0);" onclick="generator.searchForJokes()" class="btn btn-info btn-md">
-                Search
-            </a>
             <div id="searchResults"></div>
         </div>
     </div>

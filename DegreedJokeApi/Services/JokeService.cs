@@ -54,7 +54,7 @@ namespace DegreedJokeApi.Services
                           select j;
 
             var mediumResults = from j in allJokes
-                                where j.Joke.Split(' ').Length < 20
+                                where j.Joke.Split(' ').Length < 20  && j.Joke.Split(' ').Length >= 10
                                 select j;
 
             var longResults = from j in allJokes

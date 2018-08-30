@@ -19,4 +19,10 @@
   <ItemGroup>
     <None Remove="js\site.js" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\js\JokeGenerator.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\js\JokeGenerator.js" />
+  </ItemGroup>
 </Project>
